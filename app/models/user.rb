@@ -22,6 +22,8 @@ class User < ApplicationRecord
   end
 
 
+
+
   # フォローしたときの処理
   def follow(user_id)
     relationships.create(followed_id: user_id)
